@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Caculator</title>
+</head>
+<style>
+    body{
+        border-radius: revert;
+    }
+    #inNumber{
+        width: 100px;
+    }
+</style>
+<body>
+<fieldset style="position: absolute; left: 100px;right: auto; border-radius: revert; width: 100px; height: 120px">
+<input type="text" id="inNumber">
+<table style="position: absolute; left: 10px; right: 50px">
+    <tr>
+        <td><button value="1" type="button" name="btn" onclick="inputValue(this.value)">1</button></td>
+        <td><button value="2" type="button" name="btn" onclick="inputValue(this.value)">2</button></td>
+        <td><button value="3" type="button" name="btn" onclick="inputValue(this.value)">3</button></td>
+        <td><button style="position: absolute; top: 3px; left: 86px" type="button" name="op" value="+" onclick="inputValue(this.value)">+</button></td>
+    </tr>
+    <tr>
+        <td><button value="4" type="button" name="btn" onclick="inputValue(this.value)">4</button></td>
+        <td><button value="5" type="button" name="btn" onclick="inputValue(this.value)">5</button></td>
+        <td><button value="6" type="button" name="btn" onclick="inputValue(this.value)">6</button></td>
+        <td><button style="" type="button" value="-" name="op" onclick="inputValue(this.value)">-</button></td>
+    </tr>
+    <tr>
+        <td><button value="7" type="button" onclick="inputValue(this.value)">7</button></td>
+        <td><button value="8" type="button" onclick="inputValue(this.value)">8</button></td>
+        <td><button value="9" type="button" onclick="inputValue(this.value)">9</button></td>
+        <td><button type="button" value="*" onclick="inputValue(this.value)">x</button></td>
+    </tr>
+    <tr>
+        <td><button type="button" onclick="del()">C</button></td>
+        <td><button value="0" type="button" onclick="inputValue(this.value)">0</button></td>
+        <td><button type="button" onclick="result()">=</button></td>
+        <td><button type="button" value="/" onclick="inputValue(this.value)">/</button></td>
+    </tr>
+</table>
+    </fieldset>
+<script src="Caculator.js"></script>
+</body>
+</html>
